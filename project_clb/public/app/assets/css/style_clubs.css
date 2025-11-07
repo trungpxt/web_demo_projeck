@@ -1,0 +1,74 @@
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: black;
+    background: white;
+    border-radius: 10px;
+  }
+  .club-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .club-intro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #0ea5a4;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .club-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .club-card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  .club-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        /* Giá trị: [h-offset] [v-offset] [blur] [spread] [color] */
+        0 0 15px rgba(0, 240, 255, 0.8), /* Lớp phát sáng chính, mờ */
+        0 0 25px rgba(0, 240, 255, 0.4);
+  }
+  .club-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #0ea5a4;
+  }
+  .club-card h3 {
+    color: #0b77d1;
+    margin: 0.8rem 0 0.4rem;
+  }
+  .club-card p {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0 1rem;
+  }
+  .club-card button {
+    background: #0b77d1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  .club-card button:hover {
+    background: #0ea5a4;
+  }
+  #mainimgmenu{
+    height: 20px;
+    width: 20px;
+  }
+  .brand{
+    width: 60%;
+  }
