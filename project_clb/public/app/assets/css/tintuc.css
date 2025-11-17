@@ -1,0 +1,207 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+footer{
+    height: 4vh;
+}
+.item_header{
+    display:flexbox;
+    padding: 2.5vw;
+    height: 3.5vh;
+    transition: background 0.4s ease, color 0.4s ease;
+    float: right;
+    color: aliceblue;
+    text-decoration: none;
+}
+.item_header:hover{
+    background-color: aqua;
+    color: black;
+}
+footer{
+    background-color: gray;
+}
+main{
+    min-height: 100vh;
+    height: auto;
+}
+#titlebig{
+    font-size: 5rem;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+}
+#laber{
+    width: 100%;
+    background-color: rgb(0, 255, 200);
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 3rem;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+*{box-sizing:border-box}
+body{padding:0;margin:0;font-family:Arial,sans-serif}
+#header{display:flex;align-items:center;background-color:gray;padding:0;position:relative}
+#burger{font-size:2em;cursor:pointer;display:none}
+#header2{display:flex;gap:0}
+.item_header{height:10.5vh;width:auto;text-decoration:none;color:white;font-weight:600;padding:2.5vw;transition:background .4s ease,color .4s ease;color:aliceblue;text-align:center}
+.item_header:hover{background-color:aqua;color:black}
+@media screen and (max-width:768px){
+  #burger{display:block}
+  #header2{display:none;flex-direction:column;background-color:gray;position:absolute;top:50px;left:0;width:100%;padding:10px 0}
+  #header2.show{display:flex}
+}
+
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;background-color:rgb(128,128,128);font-size:1.5em;font-weight:600;padding:0 0vw;min-height:10vh}
+#header1{display:flex;align-items:center}
+#img{margin:0;display:flex;align-items:center;text-decoration:none;color:white}
+#iconweb{height:11vh;max-width:8vw;padding-right:0.8vw}
+#header2{display:flex;flex-wrap:wrap;justify-content:flex-end}
+
+.img{
+    border: 3px solid black;
+    border-radius: 15px;
+    display: block;          /* không float, cho layout ổn định */
+    height: auto;
+    width: 19vw;             /* giữ tỉ lệ tương tự, sẽ co khi cần */
+    max-width: 220px;        /* giới hạn để không quá to */
+    margin-right: 15px;
+    object-fit: cover;       /* ảnh giữ tỉ lệ, không méo */
+    box-sizing: border-box;
+}
+
+#main{
+    display: block;
+    width: 90%;
+    float: center;
+    max-width: 90vw;   /* ngăn rộng quá lớn trên màn hình to */
+    height: auto;        /* để nội dung mở rộng tự nhiên */
+    margin: 10px auto;   /* căn giữa trang theo chiều ngang */
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    padding: 1rem;       /* thêm khoảng đệm trong khung */
+    box-sizing: border-box;
+}
+
+.tintuc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 20px auto;
+    margin-top: 25px;
+    padding: 10px;
+    box-shadow: 5px 10px rgba(0,0,0,0.1);
+    width: 100%;         /* chiếm full width trong #main, tránh lệch */
+    height: auto;        /* cho nội dung cao tự nhiên */
+    background-color: rgb(170, 170, 170);
+    transition: transform 0.5s ease;
+    box-sizing: border-box;
+}
+.title{
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.tintuc:hover{
+    transform: scale(1.05);
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 10px rgb(0, 0, 0);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: auto;
+}
+#noidung{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------------------------- */
+/* RESPONSIVE — CHỈ THÊM, KHÔNG SỬA GỐC   */
+/* -------------------------------------- */
+
+@media (max-width: 1024px){
+    .item_header{
+        padding: 2vw;
+        height: auto;
+    }
+    #iconweb{
+        height: 9vh;
+        max-width: 15vw;
+    }
+    .tintuc{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        font-size: 1.2em;
+    }
+    #header2{
+        justify-content: center;
+        width: 100%;
+    }
+    .item_header{
+        padding: 3vw;
+    }
+    .img{
+        width: 40vw;
+        height: auto;
+    }
+    #menu, #noidung{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    header{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .item_header{
+        padding: 4vw;
+        font-size: 0.9em;
+    }
+    #iconweb{
+        height: 8vh;
+        max-width: 30vw;
+        padding-right: 0;
+    }
+    .tintuc{
+        width: 90vw;
+        margin: 10px auto;
+        height: auto;
+    }
+    #titlebig{
+        font-size: 3rem;
+    }
+    #laber{
+        font-size: 2rem;
+    }
+}

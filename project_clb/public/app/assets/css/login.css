@@ -1,0 +1,97 @@
+*{box-sizing:border-box}
+body{padding:0;margin:0;font-family:Arial,sans-serif}
+#header{display:flex;align-items:center;background-color:gray;padding:0;position:relative}
+#burger{font-size:2em;cursor:pointer;display:none}
+#header2{display:flex;gap:0}
+.item_header{height:10.5vh;width:auto;text-decoration:none;color:white;font-weight:600;padding:2.5vw;transition:background .4s ease,color .4s ease;color:aliceblue;text-align:center}
+.item_header:hover{background-color:aqua;color:black}
+@media screen and (max-width:768px){
+  #burger{display:block}
+  #header2{display:none;flex-direction:column;background-color:gray;position:absolute;top:50px;left:0;width:100%;padding:10px 0}
+  #header2.show{display:flex}
+}
+
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;background-color:rgb(128,128,128);font-size:1.5em;font-weight:600;padding:0 0vw;min-height:10vh}
+#header1{display:flex;align-items:center}
+#img{margin:0;display:flex;align-items:center;text-decoration:none;color:white}
+#iconweb{height:11vh;max-width:8vw;padding-right:0.8vw}
+#header2{display:flex;flex-wrap:wrap;justify-content:flex-end}
+
+#loginform{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 5px 10px #888888;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:2vw;
+    border: 3px solid black;
+    min-height: 50vh;
+}
+#loginform input{margin:1vh}
+#form{
+    font-size: 2rem;
+    color: aqua;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #676767;
+    border-radius: 15px;
+    box-shadow: 5px 10px #888888;
+    display:flexbox;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:2vw;
+    border: 1px;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transform:scale 1.5 ease;
+
+    
+}
+input:focus {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border-color: blue; 
+    outline: none; 
+    transform:scale(1.05);
+}
+#submit{
+    background-color: #f2f2f2;
+    font-weight: 700;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+#submit:hover {
+    background-color: #45a049;
+}
+

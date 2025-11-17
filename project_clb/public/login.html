@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app/assets/css/login.css">
+</head>
+<body>
+    <header>
+        <div id="header1">
+          <a id="img" href="./index.html">
+            <img id="iconweb" src="./app/assets/images/imglabel.png">
+          <p >silknight</p>
+        </a>
+        </div>
+    <!-- HTML -->
+    <div id="header">
+      <div id="burger" onclick="toggleMenu()">&#9776;</div>
+      <div id="header2">
+        <a class="item_header" href="./index.html">trang chủ</a>
+        <a class="item_header" href="./tintuc.html">tin tức</a>
+        <a class="item_header" href="">lịch tập</a>
+        <a class="item_header" href="">trang quản lí</a>
+        <a class="item_header" href="./login.html">đăng nhập</a>
+      </div>
+    </div>
+    
+    
+    <script>
+    function toggleMenu() {
+      const menu = document.getElementById("header2");
+      menu.classList.toggle("show");
+    }
+    </script>
+    
+      </header>
+      <main>
+        <main id="loginform">
+            <div id="laber"><center><h1>đăng nhập ngay</h1></center></div>
+            <br>
+            <form id="form" action="./app/assets/php/login.php" method="post">
+                <label for="name">name</label>
+                <input id="name" type="text">
+                <br>
+                <label for="gmail">gmail</label>
+                <input id="gmail" type="gmail">
+                <br>
+                <label for="pass">passowrd</label>
+                <input  id="pass" type="password">
+                <br>
+                <br>
+                <input id="submit" type="submit" value="đăng nhập">
+            </form>
+        </main>
+      </main>
+</body>
+</html>

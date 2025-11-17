@@ -1,126 +1,106 @@
-<!doctype html>
-<html lang="vi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Trang chủ - silk knight</title>
-  <!-- Nếu bạn muốn tách CSS/JS, đặt phần CSS vào /public/app/assets/css/styles.css
-       và phần JS vào /public/app/assets/js/main.js -->
-       <link rel="stylesheet" href="./app/assets/css/styles.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./app/assets/css/styles.css">
+</head>
 <body>
-  <header class="topbar" role="banner">
-    <div class="topbar-inner">
-      <div class="brand">
-        <span> <img src="./app/assets/images/iconweb.png">  Hệ thống Vợt &amp; CLB thuộc silk knight</span>
-      </div>
-
-      <button class="menu-toggle" aria-expanded="false" aria-label="Mở menu" id="menuToggle">☰</button>
-
-      <nav class="nav" id="mainNav" role="navigation" aria-label="Chức năng chính">
-        <a class="login" href="">
-          <div class="nav-item" data-key="loai-vot">Loại vợt</div>
-        </a>
-        <a class="login" href="./clubs.html">
-          <div class="nav-item" data-key="cau-lac-bo">Câu lạc bộ</div>
-        </a>
-        <a class="login" href="">
-          <div class="nav-item" data-key="the-thao">Thể thao</div>
-        </a>
-        <a class="login" href="">
-          <div class="nav-item" data-key="the-thao">hỗ trợ</div>
-        </a>
-      </nav>
-
-      <div class="actions">
-        <div id="btnProfile" class="nav-item" style="padding:.4rem .6rem;" ><a class="login" href="">đăn kí</a></div>
-        <!-- <input class="search" type="search" placeholder="Tìm..." aria-label="Tìm kiếm" id="searchInput" />
-        <button id="btnProfile" class="nav-item" style="padding:.4rem .6rem;">Tài khoản</button> -->
-      </div>
+  <header>
+    <div id="header1">
+      <a id="img" href="./index.html">
+        <img id="iconweb" src="./app/assets/images/imglabel.png">
+      <p >silknight</p>
+    </a>
     </div>
-  </header>
-  <main>
-    <div>
-      <img src="app/assets/images/imglabel.png" id="label">
-    </div>
-    <br>
-    <div id="biglabel"> silknight</div>
-
-  </main>
-  <br>
-  <br>
-<main>
-  <center>
-    <div>
-      <div class='demo'>
-        <div id="tag1">
-          câu lạc bộ <br>silknight
-          <div>
-                      <img id="demo1" src="app/assets/images/demo1.png" alt="">
-
-          </div>
-        </div>
-        <div id="text_tag1">
-
-Chào mừng đến với Câu lạc bộ Silk Knight, nơi chúng tôi không chỉ cung cấp cho hội viên một môi trường thể thao nhiệt huyết và một môi trường rèn luyện học tập không ngừng, mà còn là một cộng đồng gắn kết dành cho những trái tim chung nhịp đập với ba bộ môn vợt đầy cuốn hút: Cầu lông, Tennis và Bóng bàn.
-Tại Silk Knight, chúng tôi tin rằng thể thao là một hành trình khám phá và hoàn thiện bản thân. Dù bạn là người mới bắt đầu tìm kiếm một sân chơi năng động hay một vận động viên dày dạn kinh nghiệm muốn chinh phục những đỉnh cao mới, bạn đều sẽ tìm thấy ngọn lửa đam mê của mình tại đây.
-        </div>
-        <!-- <div> -->
-    </div>
-
-    
-  </center>
-  
-</main>
-<main>
-  <center>
-    <div class='demo'>
-      <div id="text2">
-        cơ sở vật chất hiện đại rộng rãi
-      </div>
-      <div class="slideshow">
-  <img src="app/assets/images/batminton2.jpg" class="active">
-  <img src="app/assets/images/bongban2.jpg">
-  <img src="app/assets/images/tennis2.jpg">
+<!-- HTML -->
+<div id="header">
+  <div id="burger" onclick="toggleMenu()">&#9776;</div> <!-- biểu tượng 3 gạch -->
+  <div id="header2">
+    <a class="item_header" href="./index.html">trang chủ</a>
+    <a class="item_header" href="./tintuc.html">tin tức</a>
+    <a class="item_header" href="">lịch tập</a>
+    <a class="item_header" href="">trang quản lí</a>
+    <a class="item_header" href="./login.html">đăng nhập</a>
+  </div>
 </div>
 
-      <div>
-  </center>
-</main id="background">
-<br id="footer">
-  <main style="padding:1rem; max-width:95%; margin:1.2rem auto;">
-       <div id="note1">
-       <h1>những nhà phát triển</h1>
-       <br>
-       <div>
-         <footer>
-         <center>
-          <div class="develop">
-          <h2>phạm xuân tường</h2>
-          <p>Xin chào, tôi là Phạm Xuân Trường, hiện tại 16 tuổi và là học viên của Trường Trung cấp Thông tin Truyền thông trực thuộc FPT. Dù đang trong quá trình đào tạo, tôi đã tích cực tham gia vào lĩnh vực thiết kế và phát triển website. Trong đội nhóm, tôi đảm nhận một vai trò tổng hợp, liên kết giữa ý tưởng sáng tạo và kỹ thuật thực thi. Công việc của tôi bao gồm việc quản lí nhóm để đảm bảo tiến độ và sự phối hợp nhịp nhàng, đồng thời trực tiếp chịu trách nhiệm lên ý tưởng cho giao diện và chỉnh sửa thiết kế. Đặc biệt, tôi chuyên về mảng thiết kế hiệu ứng website, biến các giao diện tĩnh thành những trải nghiệm tương tác trực quan và thu hút. Tôi luôn nỗ lực không ngừng để tạo ra những sản phẩm website vừa có tính thẩm mỹ cao vừa tối ưu về trải nghiệm người dùng.</p>
-        </div>
-        <div class="develop">
-          <h2>mạnh phú</h2>
-          <p>Xin chào, tôi là Nguyễn Mạnh Phú, hiện tại 16 tuổi và là học viên của Trường Trung cấp Thông tin Truyền thông trực thuộc FPT. Dù đang trong quá trình đào tạo, tôi đã tích cực tham gia vào lĩnh vực thiết kế và phát triển website. Trong đội nhóm, tôi đảm nhận một vai tìm kiếm và viết code, . Công việc của tôi bao gồm viết code và tìm kiếm ý tưởng trên mạng , đồng thời  lên ý tưởng cho giao diện. Tôi luôn nỗ lực không ngừng để tạo ra những sản phẩm website vừa có tính thẩm mỹ cao vừa tối ưu về trải nghiệm người dùng.</p>
-        </div>
-        <br>
-        <div class="develop">
-          <h2>kim ngân</h2>
-          <p>Xin chào, tôi là Trương Nguyễn Kim Ngân, 16 tuổi, tôi hiện đang theo học tại Trường Trung cấp Thông Tin - Truyền thông trực thuộc FPT. Hiện tôi được đào tạo về thiết kế và quản lý website, và rất hứng thú với việc tạo ra giao diện web trực quan, dễ dùng cũng như đẹp mắt cho người dùng. Trong các dự án nhóm, tôi thường hỗ trợ phần ý tưởng thiết kế, tìm và chỉnh sửa hình ảnh và sắp xếp bố cục sao cho hợp lý.Tôi cũng thường xử lý ảnh, trang trí và tinh chỉnh màu sắc của ảnh để nó trông sinh động hơn. Tôi thích cách mà một vài chi tiết nhỏ, nếu được làm khéo, có thể khiến cả giao diện trở nên bắt mắt hơn.</p>
-        </div>
-        <div class="develop">
-          <h2>hữ sang</h2>
-          <p>Xin chào, tôi là hưu sao, 16 tuổi, hiện đang theo học tại Trường Trung cấp Thông tin -  Truyền thông trực thuộc FPT. Tôi có hứng thú với lĩnh vực thiết kế và phát triển website, đặc biệt là cách mà ý tưởng có thể trở thành một sản phẩm thực tế trên màn hình. Trong nhóm, tôi đảm nhận vai trò tìm kiếm và chỉnh sửa nội dung, giúp hoàn thiện phần thông tin để phù hợp với giao diện và mục đích của trang web. Quá trình đó giúp tôi hiểu hơn về cách sắp xếp, chọn lọc và thể hiện nội dung sao cho rõ ràng và thu hút người xem.</p>
-        </div>
-       </center>
-       </footer>
-       </div>
-       
-        
-       </div>
-        
-  </main>
 
-  <script src="./app/assets/js/main.js"></script>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("header2");
+  menu.classList.toggle("show");
+}
+</script>
+
+  </header>
+<main>
+  <div><img id="imglabel" src="./app/assets/images/iconweb.jpg" alt=""></div>
+  <div id="titlebig">
+    <center>
+      <h1 class="title">silknight</h1>
+      <p id="" class="title">nợi kết nối những trái tim năng động </p>
+    </center>
+  </div>
+<br>
+  <div>
+    <div id="main1">
+      <img class="img_main" src="./app/assets/images/cau_long_cover.png" alt="">
+      <p id="text_main1">
+      🔥 ĐÃ ĐẾN LÚC KHỞI ĐỘNG HÀNH TRÌNH MỚI! 🔥
+<br>
+Cơ thể khỏe mạnh – tinh thần bứt phá – năng lượng tràn đầy!
+Đừng chỉ nói “ngày mai mình sẽ bắt đầu”, hôm nay chính là lúc!
+      </p>
+    </div>
+  </div>
+  <div id="main2">
+    <div class="item">
+      <center>
+        <img src="./app/assets/images/CS.png" class="img_main2">
+        <h2>cơ sở vật chất</h2>
+      </center>
+      <br>
+      <p>Cơ sở vật chất hiện đại, trang bị đầy đủ sân đấu, ánh sáng và dụng cụ đạt chuẩn giúp người chơi cầu lông đạt hiệu suất tốt nhất.</p>
+    </div>
+    <div class="item">
+      <center>
+        <img src="./app/assets/images/MT.png" class="img_main2">
+
+        <h2>một trường luyện tập</h2>
+      </center>
+      <p>Tại trung tâm silknight, bạn sẽ được trải nghiệm không gian tập luyện chuyên nghiệp, thiết bị tối tân và đội ngũ huấn luyện viên tận tâm.
+</p>
+    </div>
+    <div class="item">
+      <center>
+        <img src="./app/assets/images/TD.png" class="img_main2">
+
+        <h2>trình độ huấn luyên</h2>
+      </center>
+      <p>Được đào tạo bài bản, nhiều kinh nghiệm, luôn đồng hành giúp bạn đạt mục tiêu nhanh nhất.</p>
+    </div>
+  </div>
+  <div id="main3">
+    <center id="end">
+      Đừng chỉ mơ về một cơ thể khỏe mạnh – hãy bắt đầu hành trình chinh phục nó ngay hôm nay.
+Với gói hội viên thể thao, bạn không chỉ được tập luyện trong môi trường hiện đại, cùng huấn luyện viên tận tâm, mà còn được tiếp thêm năng lượng, tự tin và tinh thần bền bỉ mỗi ngày.
+<br>
+👉 Mỗi buổi tập là một bước tiến gần hơn tới phiên bản mạnh mẽ, rắn rỏi và tràn đầy sức sống của bạn.
+<br>
+👉 Đừng chờ “động lực” mới bắt đầu – hãy bắt đầu để tạo ra động lực!
+<br>
+Đăng ký ngay hôm nay để nhận ưu đãi đặc biệt và khởi động hành trình thay đổi bản thân cùng chúng tôi! 💪
+    </center>
+    <div class="img-stack">
+      <img src="./app/assets/images/img_end1.jpg" class="img-base" alt="ảnh 1">
+      <img src="./app/assets/images/img_end2.jpg" class="img-top" alt="ảnh 2">
+    </div>
+  </div>
+</main>
+  <footer>
+    <center>silknight</center>
+  </footer>
 </body>
 </html>
